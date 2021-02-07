@@ -1,0 +1,8 @@
+# test1
+hosts: all
+become: yes
+tasks:
+  httpd:  install
+  yum:
+    name: httpd
+    sate: started
